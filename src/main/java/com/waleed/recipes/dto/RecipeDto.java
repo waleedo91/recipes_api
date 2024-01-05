@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.sql.Blob;
+
 @Setter
 @Getter
 @NoArgsConstructor
@@ -16,5 +18,6 @@ public class RecipeDto {
     private int cookTime;
     private int prepTime;
     private String recipeDescription;
+    private String recipeImage;
 
 }

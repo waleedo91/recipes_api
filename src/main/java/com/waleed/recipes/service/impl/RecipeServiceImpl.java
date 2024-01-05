@@ -55,6 +55,7 @@ public class RecipeServiceImpl implements RecipeService {
         recipe.setCookTime(recipeDto.getCookTime());
         recipe.setPrepTime(recipeDto.getPrepTime());
         recipe.setRecipeDescription(recipeDto.getRecipeDescription());
+        recipe.setRecipeImage(recipeDto.getRecipeImage());
         
         Recipe updatedRecipe = recipeRepository.save(recipe);
         

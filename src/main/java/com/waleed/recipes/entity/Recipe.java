@@ -3,8 +3,11 @@ package com.waleed.recipes.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.sql.Blob;
+
 @Setter
 @Getter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -26,5 +29,9 @@ public class Recipe {
 
     @Column(nullable = false, name = "recipe_description")
     private String recipeDescription;
+
+    @Lob
+    @Column(nullable = false, name = "recipe_image", length = 1000)
+    private String recipeImage;
 
 }
